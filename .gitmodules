@@ -25,3 +25,6 @@
 [submodule "bundle/multiple-cursors"]
 	path = bundle/multiple-cursors
 	url = https://github.com/terryma/vim-multiple-cursors.git
+[submodule "bundle/syntax"]
+	path = bundle/syntax
+	url = https://github.com/octol/vim-cpp-enhanced-highlight.git
