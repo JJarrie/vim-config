@@ -1,6 +1,6 @@
 execute pathogen#infect()
 
-syntax on
+syntax enable
 filetype plugin indent on
 
 set guifont=Anonymice\ Powerline:h12
