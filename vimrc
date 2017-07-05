@@ -55,7 +55,7 @@ let g:lightline = {
       \   'modified': '(&filetype!="help"&&(&modified||!&modifiable))',
       \   'fugitive': '(exists("*fugitive#head") && ""!=fugitive#head())'
       \ },
-      \ 'separator': { 'left': '', 'right': '' },
+      \ 'separator': { 'left': '▶', 'right': '' },
       \ 'subseparator': { 'left': '', 'right': '' }
       \ }
 
@@ -66,6 +66,17 @@ let NERDTreeIgnore=['\DS_Store', '\~$', '\.swp']
 
 " GitGutter's configuration
 let g:gitgutter_sign_column_always=1
+
+"""""""""""""
+" Functions "
+"""""""""""""
+
+function! FindTextInFile()
+    call inputsave()
+    let textToFind = input('Finding text:')
+    call inputrestore()
+    execute '!find . -type f -exec grep -nH "'.textToFind.'" {} \;'
+endfunction
 
 """"""""""""""
 " Keybinding "
@@ -86,6 +97,8 @@ nnoremap <Leader><Leader> :e#<CR>
 noremap <Leader>r :CommandTFlush<CR>
 nmap <Leader>n :NERDTreeToggle<CR>
 nmap <Leader>j :NERDTreeFind<CR>
+
+nnoremap <F3> :call FindTextInFile()<CR>
 
 " Startup's settings
 autocmd VimEnter * NERDTree

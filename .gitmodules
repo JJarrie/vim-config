@@ -37,3 +37,6 @@
 [submodule "bundle/dracula-theme"]
 	path = bundle/dracula-theme
 	url = https://github.com/dracula/vim
+[submodule "bundle/vim-cmake"]
+	path = bundle/vim-cmake
+	url = https://github.com/vhdirk/vim-cmake

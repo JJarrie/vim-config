@@ -1,0 +1,392 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+SIO_CLIENT_H	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	8;"	d
+SIO_SOCKET_H	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	2;"	d
+__SIO_MESSAGE_H__	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	8;"	d
+_flag	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        flag _flag;$/;"	m	class:sio::message	access:private
+_v	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        bool _v;$/;"	m	class:sio::bool_message	access:private
+_v	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        double _v;$/;"	m	class:sio::double_message	access:private
+_v	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        int64_t _v;$/;"	m	class:sio::int_message	access:private
+_v	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        std::map<std::string,message::ptr> _v;$/;"	m	class:sio::object_message	access:private
+_v	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        std::shared_ptr<const std::string> _v;$/;"	m	class:sio::binary_message	access:private
+_v	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        std::string _v;$/;"	m	class:sio::string_message	access:private
+_v	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        std::vector<message::ptr> _v;$/;"	m	class:sio::array_message	access:private
+array_message	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        array_message():message(flag_array)$/;"	f	class:sio::array_message	access:private	signature:()
+array_message	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^    class array_message : public message$/;"	c	namespace:sio	inherits:message
+at	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        const message::ptr& at(const std::string & key) const$/;"	f	class:sio::object_message	access:public	signature:(const std::string & key) const
+at	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        const message::ptr& at(size_t i) const$/;"	f	class:sio::array_message	access:public	signature:(size_t i) const
+at	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        const message::ptr& at(size_t i) const$/;"	f	class:sio::message::list	access:public	signature:(size_t i) const
+binary_message	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        binary_message(std::shared_ptr<const std::string> const& v)$/;"	f	class:sio::binary_message	access:private	signature:(std::shared_ptr<const std::string> const& v)
+binary_message	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^    class binary_message : public message$/;"	c	namespace:sio	inherits:message
+bool_message	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        bool_message(bool v)$/;"	f	class:sio::bool_message	access:protected	signature:(bool v)
+bool_message	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^    class bool_message : public message$/;"	c	namespace:sio	inherits:message
+clear_con_listeners	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        void clear_con_listeners();$/;"	p	class:sio::client	access:public	signature:()
+clear_socket_listeners	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        void clear_socket_listeners();$/;"	p	class:sio::client	access:public	signature:()
+client	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        client();$/;"	p	class:sio::client	access:public	signature:()
+client	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        client(client const& cl){}$/;"	f	class:sio::client	access:private	signature:(client const& cl)
+client	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^    class client {$/;"	c	namespace:sio
+close	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        void close();$/;"	p	class:sio::client	access:public	signature:()
+close	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        void close();$/;"	p	class:sio::socket	access:public	signature:()
+close_listener	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        typedef std::function<void(close_reason const& reason)> close_listener;$/;"	t	class:sio::client	access:public
+close_reason	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        enum close_reason$/;"	g	class:sio::client	access:public
+close_reason_drop	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^            close_reason_drop$/;"	e	enum:sio::client::close_reason
+close_reason_normal	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^            close_reason_normal,$/;"	e	enum:sio::client::close_reason
+con_listener	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        typedef std::function<void(void)> con_listener;$/;"	t	class:sio::client	access:public
+connect	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        void connect(const std::string& uri);$/;"	p	class:sio::client	access:public	signature:(const std::string& uri)
+connect	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        void connect(const std::string& uri, const std::map<std::string,std::string>& query);$/;"	p	class:sio::client	access:public	signature:(const std::string& uri, const std::map<std::string,std::string>& query)
+connect	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        void connect(const std::string& uri, const std::map<std::string,std::string>& query,$/;"	p	class:sio::client	access:public	signature:(const std::string& uri, const std::map<std::string,std::string>& query, const std::map<std::string,std::string>& http_extra_headers)
+create	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        static message::ptr create()$/;"	f	class:sio::array_message	access:public	signature:()
+create	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        static message::ptr create()$/;"	f	class:sio::null_message	access:public	signature:()
+create	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        static message::ptr create()$/;"	f	class:sio::object_message	access:public	signature:()
+create	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        static message::ptr create(bool v)$/;"	f	class:sio::bool_message	access:public	signature:(bool v)
+create	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        static message::ptr create(double v)$/;"	f	class:sio::double_message	access:public	signature:(double v)
+create	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        static message::ptr create(int64_t v)$/;"	f	class:sio::int_message	access:public	signature:(int64_t v)
+create	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        static message::ptr create(std::shared_ptr<const std::string> const& v)$/;"	f	class:sio::binary_message	access:public	signature:(std::shared_ptr<const std::string> const& v)
+create	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        static message::ptr create(std::string const& v)$/;"	f	class:sio::string_message	access:public	signature:(std::string const& v)
+create	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        static message::ptr create(std::string&& v)$/;"	f	class:sio::string_message	access:public	signature:(std::string&& v)
+double_message	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        double_message(double v)$/;"	f	class:sio::double_message	access:private	signature:(double v)
+double_message	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^    class double_message : public message$/;"	c	namespace:sio	inherits:message
+emit	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        void emit(std::string const& name, message::list const& msglist = nullptr, std::function<void (message::list const&)> const& ack = nullptr);$/;"	p	class:sio::socket	access:public	signature:(std::string const& name, message::list const& msglist = nullptr, std::function<void (message::list const&)> const& ack = nullptr)
+error_listener	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        typedef std::function<void(message::ptr const& message)> error_listener;$/;"	t	class:sio::socket	access:public
+event	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        event(std::string const& nsp,std::string const& name,message::list const& messages,bool need_ack);$/;"	p	class:sio::event	access:protected	signature:(std::string const& nsp,std::string const& name,message::list const& messages,bool need_ack)
+event	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        event(std::string const& nsp,std::string const& name,message::list&& messages,bool need_ack);$/;"	p	class:sio::event	access:protected	signature:(std::string const& nsp,std::string const& name,message::list&& messages,bool need_ack)
+event	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^    class event$/;"	c	namespace:sio
+event_listener	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        typedef std::function<void(event& event)> event_listener;$/;"	t	class:sio::socket	access:public
+event_listener_aux	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        typedef std::function<void(const std::string& name,message::ptr const& message,bool need_ack, message::list& ack_message)> event_listener_aux;$/;"	t	class:sio::socket	access:public
+flag	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        enum flag$/;"	g	class:sio::message	access:public
+flag_array	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^            flag_array,$/;"	e	enum:sio::message::flag
+flag_binary	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^            flag_binary,$/;"	e	enum:sio::message::flag
+flag_boolean	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^            flag_boolean,$/;"	e	enum:sio::message::flag
+flag_double	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^            flag_double,$/;"	e	enum:sio::message::flag
+flag_integer	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^            flag_integer,$/;"	e	enum:sio::message::flag
+flag_null	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^            flag_null$/;"	e	enum:sio::message::flag
+flag_object	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^            flag_object,$/;"	e	enum:sio::message::flag
+flag_string	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^            flag_string,$/;"	e	enum:sio::message::flag
+get_ack_message	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        message::list const& get_ack_message() const;$/;"	p	class:sio::event::message	access:public	signature:() const
+get_ack_message_impl	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        message::list& get_ack_message_impl();$/;"	p	class:sio::event	access:protected	signature:()
+get_binary	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        std::shared_ptr<const std::string> const& get_binary() const$/;"	f	class:sio::binary_message::std	access:public	signature:() const
+get_binary	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        virtual std::shared_ptr<const std::string> const& get_binary() const$/;"	f	class:sio::message::std	access:public	signature:() const
+get_bool	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        bool get_bool() const$/;"	f	class:sio::bool_message	access:public	signature:() const
+get_bool	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        virtual bool get_bool() const$/;"	f	class:sio::message	access:public	signature:() const
+get_double	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        double get_double() const$/;"	f	class:sio::double_message	access:public	signature:() const
+get_double	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        double get_double() const\/\/add double accessor for integer.$/;"	f	class:sio::int_message	access:public	signature:() const
+get_double	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        virtual double get_double() const$/;"	f	class:sio::message	access:public	signature:() const
+get_flag	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        flag get_flag() const$/;"	f	class:sio::message	access:public	signature:() const
+get_int	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        int64_t get_int() const$/;"	f	class:sio::int_message	access:public	signature:() const
+get_int	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        virtual int64_t get_int() const$/;"	f	class:sio::message	access:public	signature:() const
+get_map	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        const std::map<std::string,message::ptr>& get_map() const$/;"	f	class:sio::object_message	access:public	signature:() const
+get_map	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        std::map<std::string,message::ptr>& get_map()$/;"	f	class:sio::object_message	access:public	signature:()
+get_map	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        virtual const std::map<std::string,message::ptr>& get_map() const$/;"	f	class:sio::message	access:public	signature:() const
+get_map	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        virtual std::map<std::string,message::ptr>& get_map()$/;"	f	class:sio::message	access:public	signature:()
+get_message	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        const message::ptr& get_message() const;$/;"	p	class:sio::event	access:public	signature:() const
+get_messages	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        const message::list& get_messages() const;$/;"	p	class:sio::event	access:public	signature:() const
+get_name	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        const std::string& get_name() const;$/;"	p	class:sio::event	access:public	signature:() const
+get_namespace	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        std::string const& get_namespace() const;$/;"	p	class:sio::socket::std	access:public	signature:() const
+get_nsp	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        const std::string& get_nsp() const;$/;"	p	class:sio::event	access:public	signature:() const
+get_sessionid	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        std::string const& get_sessionid() const;$/;"	p	class:sio::client::std	access:public	signature:() const
+get_string	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        std::string const& get_string() const$/;"	f	class:sio::string_message::std	access:public	signature:() const
+get_string	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        virtual std::string const& get_string() const$/;"	f	class:sio::message::std	access:public	signature:() const
+get_vector	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        const std::vector<ptr>& get_vector() const$/;"	f	class:sio::array_message	access:public	signature:() const
+get_vector	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        std::vector<ptr>& get_vector()$/;"	f	class:sio::array_message	access:public	signature:()
+get_vector	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        virtual const std::vector<ptr>& get_vector() const$/;"	f	class:sio::message	access:public	signature:() const
+get_vector	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        virtual std::vector<ptr>& get_vector()$/;"	f	class:sio::message	access:public	signature:()
+has	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        bool has(const std::string & key) const$/;"	f	class:sio::object_message	access:public	signature:(const std::string & key) const
+has	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        bool has(const std::string & key)$/;"	f	class:sio::object_message	access:public	signature:(const std::string & key)
+insert	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        void insert(const std::string & key,const std::string& text)$/;"	f	class:sio::object_message	access:public	signature:(const std::string & key,const std::string& text)
+insert	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        void insert(const std::string & key,message::ptr const& message)$/;"	f	class:sio::object_message	access:public	signature:(const std::string & key,message::ptr const& message)
+insert	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        void insert(const std::string & key,std::shared_ptr<const std::string> const& binary)$/;"	f	class:sio::object_message	access:public	signature:(const std::string & key,std::shared_ptr<const std::string> const& binary)
+insert	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        void insert(const std::string & key,std::shared_ptr<std::string> const& binary)$/;"	f	class:sio::object_message	access:public	signature:(const std::string & key,std::shared_ptr<std::string> const& binary)
+insert	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        void insert(const std::string & key,std::string&& text)$/;"	f	class:sio::object_message	access:public	signature:(const std::string & key,std::string&& text)
+insert	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        void insert(size_t pos,const std::string& text)$/;"	f	class:sio::array_message	access:public	signature:(size_t pos,const std::string& text)
+insert	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        void insert(size_t pos,const std::string& text)$/;"	f	class:sio::message::list	access:public	signature:(size_t pos,const std::string& text)
+insert	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        void insert(size_t pos,message::ptr const& message)$/;"	f	class:sio::array_message	access:public	signature:(size_t pos,message::ptr const& message)
+insert	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        void insert(size_t pos,message::ptr const& message)$/;"	f	class:sio::message::list	access:public	signature:(size_t pos,message::ptr const& message)
+insert	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        void insert(size_t pos,std::shared_ptr<const std::string> const& binary)$/;"	f	class:sio::array_message	access:public	signature:(size_t pos,std::shared_ptr<const std::string> const& binary)
+insert	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        void insert(size_t pos,std::shared_ptr<const std::string> const& binary)$/;"	f	class:sio::message::list	access:public	signature:(size_t pos,std::shared_ptr<const std::string> const& binary)
+insert	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        void insert(size_t pos,std::shared_ptr<std::string> const& binary)$/;"	f	class:sio::array_message	access:public	signature:(size_t pos,std::shared_ptr<std::string> const& binary)
+insert	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        void insert(size_t pos,std::shared_ptr<std::string> const& binary)$/;"	f	class:sio::message::list	access:public	signature:(size_t pos,std::shared_ptr<std::string> const& binary)
+insert	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        void insert(size_t pos,std::string&& text)$/;"	f	class:sio::array_message	access:public	signature:(size_t pos,std::string&& text)
+insert	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        void insert(size_t pos,std::string&& text)$/;"	f	class:sio::message::list	access:public	signature:(size_t pos,std::string&& text)
+int_message	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        int_message(int64_t v)$/;"	f	class:sio::int_message	access:protected	signature:(int64_t v)
+int_message	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^    class int_message : public message$/;"	c	namespace:sio	inherits:message
+list	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        list()$/;"	f	class:sio::message::list	access:public	signature:()
+list	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        list(T&& content,$/;"	f	class:sio::message::list	access:public	signature:(T&& content, typename std::enable_if<std::is_same<std::vector<message::ptr>,typename std::remove_reference<T>::type>::value>::type* = 0)
+list	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        list(const std::string& text)$/;"	f	class:sio::message::list	access:public	signature:(const std::string& text)
+list	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        list(message::list const& rhs):$/;"	f	class:sio::message::list	access:public	signature:(message::list const& rhs)
+list	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        list(message::list&& rhs):$/;"	f	class:sio::message::list	access:public	signature:(message::list&& rhs)
+list	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        list(message::ptr const& message)$/;"	f	class:sio::message::list	access:public	signature:(message::ptr const& message)
+list	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        list(std::nullptr_t)$/;"	f	class:sio::message::list	access:public	signature:(std::nullptr_t)
+list	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        list(std::shared_ptr<const std::string> const& binary)$/;"	f	class:sio::message::list	access:public	signature:(std::shared_ptr<const std::string> const& binary)
+list	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        list(std::shared_ptr<std::string> const& binary)$/;"	f	class:sio::message::list	access:public	signature:(std::shared_ptr<std::string> const& binary)
+list	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        list(std::string&& text)$/;"	f	class:sio::message::list	access:public	signature:(std::string&& text)
+list	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^    class message::list$/;"	c	class:sio::message
+m_ack_message	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        message::list m_ack_message;$/;"	m	class:sio::event	access:private
+m_impl	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        client_impl* m_impl;$/;"	m	class:sio::client	access:private
+m_impl	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        impl *m_impl;$/;"	m	class:sio::socket	access:private
+m_messages	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        const message::list m_messages;$/;"	m	class:sio::event	access:private
+m_name	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        const std::string m_name;$/;"	m	class:sio::event	access:private
+m_need_ack	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        const bool m_need_ack;$/;"	m	class:sio::event	access:private
+m_nsp	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        const std::string m_nsp;$/;"	m	class:sio::event	access:private
+m_vector	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        std::vector<message::ptr> m_vector;$/;"	m	class:sio::message::list	access:private
+message	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        message(flag f):_flag(f){}$/;"	f	class:sio::message	access:protected	signature:(flag f)
+message	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^    class message$/;"	c	namespace:sio
+need_ack	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        bool need_ack() const;$/;"	p	class:sio::event	access:public	signature:() const
+null_message	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        null_message()$/;"	f	class:sio::null_message	access:protected	signature:()
+null_message	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^    class null_message : public message$/;"	c	namespace:sio	inherits:message
+object_message	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        object_message() : message(flag_object)$/;"	f	class:sio::object_message	access:private	signature:()
+object_message	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^    class object_message : public message$/;"	c	namespace:sio	inherits:message
+off	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        void off(std::string const& event_name);$/;"	p	class:sio::socket	access:public	signature:(std::string const& event_name)
+off_all	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        void off_all();$/;"	p	class:sio::socket	access:public	signature:()
+off_error	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        void off_error();$/;"	p	class:sio::socket	access:public	signature:()
+on	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        void on(std::string const& event_name,event_listener const& func);$/;"	p	class:sio::socket	access:public	signature:(std::string const& event_name,event_listener const& func)
+on	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        void on(std::string const& event_name,event_listener_aux const& func);$/;"	p	class:sio::socket	access:public	signature:(std::string const& event_name,event_listener_aux const& func)
+on_close	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        void on_close();$/;"	p	class:sio::socket	access:protected	signature:()
+on_connected	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        void on_connected();$/;"	p	class:sio::socket	access:protected	signature:()
+on_disconnect	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        void on_disconnect();$/;"	p	class:sio::socket	access:protected	signature:()
+on_error	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        void on_error(error_listener const& l);$/;"	p	class:sio::socket	access:public	signature:(error_listener const& l)
+on_message_packet	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        void on_message_packet(packet const& p);$/;"	p	class:sio::socket	access:protected	signature:(packet const& p)
+on_open	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        void on_open();$/;"	p	class:sio::socket	access:protected	signature:()
+opened	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        bool opened() const;$/;"	p	class:sio::client	access:public	signature:() const
+operator =	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        void operator=(client const& cl){}$/;"	f	class:sio::client	access:private	signature:(client const& cl)
+operator =	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        list & operator= (const message::list && rhs)$/;"	f	class:sio::message::list	access:public	signature:(const message::list && rhs)
+operator =	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        void operator=(socket const& sock){}$/;"	f	class:sio::socket	access:private	signature:(socket const& sock)
+operator []	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        const message::ptr& operator[] (const std::string & key) const$/;"	f	class:sio::object_message	access:public	signature:(const std::string & key) const
+operator []	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        const message::ptr& operator[] (size_t i) const$/;"	f	class:sio::array_message	access:public	signature:(size_t i) const
+operator []	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        const message::ptr& operator[] (size_t i) const$/;"	f	class:sio::message::list	access:public	signature:(size_t i) const
+ptr	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        typedef std::shared_ptr<message> ptr;$/;"	t	class:sio::message	access:public
+ptr	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        typedef std::shared_ptr<socket> ptr;$/;"	t	class:sio::socket	access:public
+push	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        void push(const std::string& text)$/;"	f	class:sio::array_message	access:public	signature:(const std::string& text)
+push	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        void push(const std::string& text)$/;"	f	class:sio::message::list	access:public	signature:(const std::string& text)
+push	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        void push(message::ptr const& message)$/;"	f	class:sio::array_message	access:public	signature:(message::ptr const& message)
+push	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        void push(message::ptr const& message)$/;"	f	class:sio::message::list	access:public	signature:(message::ptr const& message)
+push	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        void push(std::shared_ptr<const std::string> const& binary)$/;"	f	class:sio::array_message	access:public	signature:(std::shared_ptr<const std::string> const& binary)
+push	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        void push(std::shared_ptr<const std::string> const& binary)$/;"	f	class:sio::message::list	access:public	signature:(std::shared_ptr<const std::string> const& binary)
+push	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        void push(std::shared_ptr<std::string> const& binary)$/;"	f	class:sio::array_message	access:public	signature:(std::shared_ptr<std::string> const& binary)
+push	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        void push(std::shared_ptr<std::string> const& binary)$/;"	f	class:sio::message::list	access:public	signature:(std::shared_ptr<std::string> const& binary)
+push	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        void push(std::string&& text)$/;"	f	class:sio::array_message	access:public	signature:(std::string&& text)
+push	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        void push(std::string&& text)$/;"	f	class:sio::message::list	access:public	signature:(std::string&& text)
+put_ack_message	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        void put_ack_message(message::list const& ack_message);$/;"	p	class:sio::event	access:public	signature:(message::list const& ack_message)
+reconnect_listener	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        typedef std::function<void(unsigned, unsigned)> reconnect_listener;$/;"	t	class:sio::client	access:public
+set_close_listener	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        void set_close_listener(close_listener const& l);$/;"	p	class:sio::client	access:public	signature:(close_listener const& l)
+set_fail_listener	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        void set_fail_listener(con_listener const& l);$/;"	p	class:sio::client	access:public	signature:(con_listener const& l)
+set_open_listener	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        void set_open_listener(con_listener const& l);$/;"	p	class:sio::client	access:public	signature:(con_listener const& l)
+set_reconnect_attempts	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        void set_reconnect_attempts(int attempts);$/;"	p	class:sio::client	access:public	signature:(int attempts)
+set_reconnect_delay	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        void set_reconnect_delay(unsigned millis);$/;"	p	class:sio::client	access:public	signature:(unsigned millis)
+set_reconnect_delay_max	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        void set_reconnect_delay_max(unsigned millis);$/;"	p	class:sio::client	access:public	signature:(unsigned millis)
+set_reconnect_listener	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        void set_reconnect_listener(reconnect_listener const& l);$/;"	p	class:sio::client	access:public	signature:(reconnect_listener const& l)
+set_reconnecting_listener	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        void set_reconnecting_listener(con_listener const& l);$/;"	p	class:sio::client	access:public	signature:(con_listener const& l)
+set_socket_close_listener	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        void set_socket_close_listener(socket_listener const& l);$/;"	p	class:sio::client	access:public	signature:(socket_listener const& l)
+set_socket_open_listener	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        void set_socket_open_listener(socket_listener const& l);$/;"	p	class:sio::client	access:public	signature:(socket_listener const& l)
+sio	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^namespace sio$/;"	n
+sio	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^namespace sio$/;"	n
+sio	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^namespace sio$/;"	n
+sio::array_message	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^    class array_message : public message$/;"	c	namespace:sio	inherits:message
+sio::array_message::_v	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        std::vector<message::ptr> _v;$/;"	m	class:sio::array_message	access:private
+sio::array_message::array_message	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        array_message():message(flag_array)$/;"	f	class:sio::array_message	access:private	signature:()
+sio::array_message::at	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        const message::ptr& at(size_t i) const$/;"	f	class:sio::array_message	access:public	signature:(size_t i) const
+sio::array_message::create	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        static message::ptr create()$/;"	f	class:sio::array_message	access:public	signature:()
+sio::array_message::get_vector	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        const std::vector<ptr>& get_vector() const$/;"	f	class:sio::array_message	access:public	signature:() const
+sio::array_message::get_vector	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        std::vector<ptr>& get_vector()$/;"	f	class:sio::array_message	access:public	signature:()
+sio::array_message::insert	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        void insert(size_t pos,const std::string& text)$/;"	f	class:sio::array_message	access:public	signature:(size_t pos,const std::string& text)
+sio::array_message::insert	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        void insert(size_t pos,message::ptr const& message)$/;"	f	class:sio::array_message	access:public	signature:(size_t pos,message::ptr const& message)
+sio::array_message::insert	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        void insert(size_t pos,std::shared_ptr<const std::string> const& binary)$/;"	f	class:sio::array_message	access:public	signature:(size_t pos,std::shared_ptr<const std::string> const& binary)
+sio::array_message::insert	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        void insert(size_t pos,std::shared_ptr<std::string> const& binary)$/;"	f	class:sio::array_message	access:public	signature:(size_t pos,std::shared_ptr<std::string> const& binary)
+sio::array_message::insert	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        void insert(size_t pos,std::string&& text)$/;"	f	class:sio::array_message	access:public	signature:(size_t pos,std::string&& text)
+sio::array_message::operator []	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        const message::ptr& operator[] (size_t i) const$/;"	f	class:sio::array_message	access:public	signature:(size_t i) const
+sio::array_message::push	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        void push(const std::string& text)$/;"	f	class:sio::array_message	access:public	signature:(const std::string& text)
+sio::array_message::push	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        void push(message::ptr const& message)$/;"	f	class:sio::array_message	access:public	signature:(message::ptr const& message)
+sio::array_message::push	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        void push(std::shared_ptr<const std::string> const& binary)$/;"	f	class:sio::array_message	access:public	signature:(std::shared_ptr<const std::string> const& binary)
+sio::array_message::push	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        void push(std::shared_ptr<std::string> const& binary)$/;"	f	class:sio::array_message	access:public	signature:(std::shared_ptr<std::string> const& binary)
+sio::array_message::push	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        void push(std::string&& text)$/;"	f	class:sio::array_message	access:public	signature:(std::string&& text)
+sio::array_message::size	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        size_t size() const$/;"	f	class:sio::array_message	access:public	signature:() const
+sio::binary_message	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^    class binary_message : public message$/;"	c	namespace:sio	inherits:message
+sio::binary_message::_v	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        std::shared_ptr<const std::string> _v;$/;"	m	class:sio::binary_message	access:private
+sio::binary_message::binary_message	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        binary_message(std::shared_ptr<const std::string> const& v)$/;"	f	class:sio::binary_message	access:private	signature:(std::shared_ptr<const std::string> const& v)
+sio::binary_message::create	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        static message::ptr create(std::shared_ptr<const std::string> const& v)$/;"	f	class:sio::binary_message	access:public	signature:(std::shared_ptr<const std::string> const& v)
+sio::binary_message::std::get_binary	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        std::shared_ptr<const std::string> const& get_binary() const$/;"	f	class:sio::binary_message::std	access:public	signature:() const
+sio::bool_message	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^    class bool_message : public message$/;"	c	namespace:sio	inherits:message
+sio::bool_message::_v	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        bool _v;$/;"	m	class:sio::bool_message	access:private
+sio::bool_message::bool_message	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        bool_message(bool v)$/;"	f	class:sio::bool_message	access:protected	signature:(bool v)
+sio::bool_message::create	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        static message::ptr create(bool v)$/;"	f	class:sio::bool_message	access:public	signature:(bool v)
+sio::bool_message::get_bool	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        bool get_bool() const$/;"	f	class:sio::bool_message	access:public	signature:() const
+sio::client	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^    class client {$/;"	c	namespace:sio
+sio::client::clear_con_listeners	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        void clear_con_listeners();$/;"	p	class:sio::client	access:public	signature:()
+sio::client::clear_socket_listeners	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        void clear_socket_listeners();$/;"	p	class:sio::client	access:public	signature:()
+sio::client::client	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        client();$/;"	p	class:sio::client	access:public	signature:()
+sio::client::client	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        client(client const& cl){}$/;"	f	class:sio::client	access:private	signature:(client const& cl)
+sio::client::close	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        void close();$/;"	p	class:sio::client	access:public	signature:()
+sio::client::close_listener	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        typedef std::function<void(close_reason const& reason)> close_listener;$/;"	t	class:sio::client	access:public
+sio::client::close_reason	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        enum close_reason$/;"	g	class:sio::client	access:public
+sio::client::close_reason_drop	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^            close_reason_drop$/;"	e	enum:sio::client::close_reason
+sio::client::close_reason_normal	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^            close_reason_normal,$/;"	e	enum:sio::client::close_reason
+sio::client::con_listener	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        typedef std::function<void(void)> con_listener;$/;"	t	class:sio::client	access:public
+sio::client::connect	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        void connect(const std::string& uri);$/;"	p	class:sio::client	access:public	signature:(const std::string& uri)
+sio::client::connect	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        void connect(const std::string& uri, const std::map<std::string,std::string>& query);$/;"	p	class:sio::client	access:public	signature:(const std::string& uri, const std::map<std::string,std::string>& query)
+sio::client::connect	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        void connect(const std::string& uri, const std::map<std::string,std::string>& query,$/;"	p	class:sio::client	access:public	signature:(const std::string& uri, const std::map<std::string,std::string>& query, const std::map<std::string,std::string>& http_extra_headers)
+sio::client::m_impl	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        client_impl* m_impl;$/;"	m	class:sio::client	access:private
+sio::client::opened	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        bool opened() const;$/;"	p	class:sio::client	access:public	signature:() const
+sio::client::operator =	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        void operator=(client const& cl){}$/;"	f	class:sio::client	access:private	signature:(client const& cl)
+sio::client::reconnect_listener	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        typedef std::function<void(unsigned, unsigned)> reconnect_listener;$/;"	t	class:sio::client	access:public
+sio::client::set_close_listener	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        void set_close_listener(close_listener const& l);$/;"	p	class:sio::client	access:public	signature:(close_listener const& l)
+sio::client::set_fail_listener	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        void set_fail_listener(con_listener const& l);$/;"	p	class:sio::client	access:public	signature:(con_listener const& l)
+sio::client::set_open_listener	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        void set_open_listener(con_listener const& l);$/;"	p	class:sio::client	access:public	signature:(con_listener const& l)
+sio::client::set_reconnect_attempts	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        void set_reconnect_attempts(int attempts);$/;"	p	class:sio::client	access:public	signature:(int attempts)
+sio::client::set_reconnect_delay	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        void set_reconnect_delay(unsigned millis);$/;"	p	class:sio::client	access:public	signature:(unsigned millis)
+sio::client::set_reconnect_delay_max	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        void set_reconnect_delay_max(unsigned millis);$/;"	p	class:sio::client	access:public	signature:(unsigned millis)
+sio::client::set_reconnect_listener	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        void set_reconnect_listener(reconnect_listener const& l);$/;"	p	class:sio::client	access:public	signature:(reconnect_listener const& l)
+sio::client::set_reconnecting_listener	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        void set_reconnecting_listener(con_listener const& l);$/;"	p	class:sio::client	access:public	signature:(con_listener const& l)
+sio::client::set_socket_close_listener	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        void set_socket_close_listener(socket_listener const& l);$/;"	p	class:sio::client	access:public	signature:(socket_listener const& l)
+sio::client::set_socket_open_listener	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        void set_socket_open_listener(socket_listener const& l);$/;"	p	class:sio::client	access:public	signature:(socket_listener const& l)
+sio::client::sio::socket::socket	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        sio::socket::ptr const& socket(const std::string& nsp = "");$/;"	p	class:sio::client::sio::socket	access:public	signature:(const std::string& nsp = Ó)
+sio::client::socket_listener	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        typedef std::function<void(std::string const& nsp)> socket_listener;$/;"	t	class:sio::client	access:public
+sio::client::std::get_sessionid	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        std::string const& get_sessionid() const;$/;"	p	class:sio::client::std	access:public	signature:() const
+sio::client::sync_close	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        void sync_close();$/;"	p	class:sio::client	access:public	signature:()
+sio::client::~client	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        ~client();$/;"	p	class:sio::client	access:public	signature:()
+sio::double_message	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^    class double_message : public message$/;"	c	namespace:sio	inherits:message
+sio::double_message::_v	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        double _v;$/;"	m	class:sio::double_message	access:private
+sio::double_message::create	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        static message::ptr create(double v)$/;"	f	class:sio::double_message	access:public	signature:(double v)
+sio::double_message::double_message	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        double_message(double v)$/;"	f	class:sio::double_message	access:private	signature:(double v)
+sio::double_message::get_double	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        double get_double() const$/;"	f	class:sio::double_message	access:public	signature:() const
+sio::event	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^    class event$/;"	c	namespace:sio
+sio::event::event	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        event(std::string const& nsp,std::string const& name,message::list const& messages,bool need_ack);$/;"	p	class:sio::event	access:protected	signature:(std::string const& nsp,std::string const& name,message::list const& messages,bool need_ack)
+sio::event::event	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        event(std::string const& nsp,std::string const& name,message::list&& messages,bool need_ack);$/;"	p	class:sio::event	access:protected	signature:(std::string const& nsp,std::string const& name,message::list&& messages,bool need_ack)
+sio::event::get_ack_message_impl	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        message::list& get_ack_message_impl();$/;"	p	class:sio::event	access:protected	signature:()
+sio::event::get_message	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        const message::ptr& get_message() const;$/;"	p	class:sio::event	access:public	signature:() const
+sio::event::get_messages	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        const message::list& get_messages() const;$/;"	p	class:sio::event	access:public	signature:() const
+sio::event::get_name	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        const std::string& get_name() const;$/;"	p	class:sio::event	access:public	signature:() const
+sio::event::get_nsp	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        const std::string& get_nsp() const;$/;"	p	class:sio::event	access:public	signature:() const
+sio::event::m_ack_message	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        message::list m_ack_message;$/;"	m	class:sio::event	access:private
+sio::event::m_messages	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        const message::list m_messages;$/;"	m	class:sio::event	access:private
+sio::event::m_name	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        const std::string m_name;$/;"	m	class:sio::event	access:private
+sio::event::m_need_ack	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        const bool m_need_ack;$/;"	m	class:sio::event	access:private
+sio::event::m_nsp	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        const std::string m_nsp;$/;"	m	class:sio::event	access:private
+sio::event::message::get_ack_message	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        message::list const& get_ack_message() const;$/;"	p	class:sio::event::message	access:public	signature:() const
+sio::event::need_ack	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        bool need_ack() const;$/;"	p	class:sio::event	access:public	signature:() const
+sio::event::put_ack_message	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        void put_ack_message(message::list const& ack_message);$/;"	p	class:sio::event	access:public	signature:(message::list const& ack_message)
+sio::int_message	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^    class int_message : public message$/;"	c	namespace:sio	inherits:message
+sio::int_message::_v	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        int64_t _v;$/;"	m	class:sio::int_message	access:private
+sio::int_message::create	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        static message::ptr create(int64_t v)$/;"	f	class:sio::int_message	access:public	signature:(int64_t v)
+sio::int_message::get_double	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        double get_double() const\/\/add double accessor for integer.$/;"	f	class:sio::int_message	access:public	signature:() const
+sio::int_message::get_int	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        int64_t get_int() const$/;"	f	class:sio::int_message	access:public	signature:() const
+sio::int_message::int_message	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        int_message(int64_t v)$/;"	f	class:sio::int_message	access:protected	signature:(int64_t v)
+sio::message	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^    class message$/;"	c	namespace:sio
+sio::message::_flag	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        flag _flag;$/;"	m	class:sio::message	access:private
+sio::message::flag	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        enum flag$/;"	g	class:sio::message	access:public
+sio::message::flag_array	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^            flag_array,$/;"	e	enum:sio::message::flag
+sio::message::flag_binary	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^            flag_binary,$/;"	e	enum:sio::message::flag
+sio::message::flag_boolean	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^            flag_boolean,$/;"	e	enum:sio::message::flag
+sio::message::flag_double	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^            flag_double,$/;"	e	enum:sio::message::flag
+sio::message::flag_integer	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^            flag_integer,$/;"	e	enum:sio::message::flag
+sio::message::flag_null	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^            flag_null$/;"	e	enum:sio::message::flag
+sio::message::flag_object	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^            flag_object,$/;"	e	enum:sio::message::flag
+sio::message::flag_string	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^            flag_string,$/;"	e	enum:sio::message::flag
+sio::message::get_bool	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        virtual bool get_bool() const$/;"	f	class:sio::message	access:public	signature:() const
+sio::message::get_double	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        virtual double get_double() const$/;"	f	class:sio::message	access:public	signature:() const
+sio::message::get_flag	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        flag get_flag() const$/;"	f	class:sio::message	access:public	signature:() const
+sio::message::get_int	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        virtual int64_t get_int() const$/;"	f	class:sio::message	access:public	signature:() const
+sio::message::get_map	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        virtual const std::map<std::string,message::ptr>& get_map() const$/;"	f	class:sio::message	access:public	signature:() const
+sio::message::get_map	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        virtual std::map<std::string,message::ptr>& get_map()$/;"	f	class:sio::message	access:public	signature:()
+sio::message::get_vector	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        virtual const std::vector<ptr>& get_vector() const$/;"	f	class:sio::message	access:public	signature:() const
+sio::message::get_vector	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        virtual std::vector<ptr>& get_vector()$/;"	f	class:sio::message	access:public	signature:()
+sio::message::list	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^    class message::list$/;"	c	class:sio::message
+sio::message::list::at	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        const message::ptr& at(size_t i) const$/;"	f	class:sio::message::list	access:public	signature:(size_t i) const
+sio::message::list::insert	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        void insert(size_t pos,const std::string& text)$/;"	f	class:sio::message::list	access:public	signature:(size_t pos,const std::string& text)
+sio::message::list::insert	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        void insert(size_t pos,message::ptr const& message)$/;"	f	class:sio::message::list	access:public	signature:(size_t pos,message::ptr const& message)
+sio::message::list::insert	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        void insert(size_t pos,std::shared_ptr<const std::string> const& binary)$/;"	f	class:sio::message::list	access:public	signature:(size_t pos,std::shared_ptr<const std::string> const& binary)
+sio::message::list::insert	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        void insert(size_t pos,std::shared_ptr<std::string> const& binary)$/;"	f	class:sio::message::list	access:public	signature:(size_t pos,std::shared_ptr<std::string> const& binary)
+sio::message::list::insert	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        void insert(size_t pos,std::string&& text)$/;"	f	class:sio::message::list	access:public	signature:(size_t pos,std::string&& text)
+sio::message::list::list	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        list()$/;"	f	class:sio::message::list	access:public	signature:()
+sio::message::list::list	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        list(T&& content,$/;"	f	class:sio::message::list	access:public	signature:(T&& content, typename std::enable_if<std::is_same<std::vector<message::ptr>,typename std::remove_reference<T>::type>::value>::type* = 0)
+sio::message::list::list	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        list(const std::string& text)$/;"	f	class:sio::message::list	access:public	signature:(const std::string& text)
+sio::message::list::list	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        list(message::list const& rhs):$/;"	f	class:sio::message::list	access:public	signature:(message::list const& rhs)
+sio::message::list::list	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        list(message::list&& rhs):$/;"	f	class:sio::message::list	access:public	signature:(message::list&& rhs)
+sio::message::list::list	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        list(message::ptr const& message)$/;"	f	class:sio::message::list	access:public	signature:(message::ptr const& message)
+sio::message::list::list	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        list(std::nullptr_t)$/;"	f	class:sio::message::list	access:public	signature:(std::nullptr_t)
+sio::message::list::list	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        list(std::shared_ptr<const std::string> const& binary)$/;"	f	class:sio::message::list	access:public	signature:(std::shared_ptr<const std::string> const& binary)
+sio::message::list::list	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        list(std::shared_ptr<std::string> const& binary)$/;"	f	class:sio::message::list	access:public	signature:(std::shared_ptr<std::string> const& binary)
+sio::message::list::list	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        list(std::string&& text)$/;"	f	class:sio::message::list	access:public	signature:(std::string&& text)
+sio::message::list::m_vector	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        std::vector<message::ptr> m_vector;$/;"	m	class:sio::message::list	access:private
+sio::message::list::operator =	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        list & operator= (const message::list && rhs)$/;"	f	class:sio::message::list	access:public	signature:(const message::list && rhs)
+sio::message::list::operator []	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        const message::ptr& operator[] (size_t i) const$/;"	f	class:sio::message::list	access:public	signature:(size_t i) const
+sio::message::list::push	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        void push(const std::string& text)$/;"	f	class:sio::message::list	access:public	signature:(const std::string& text)
+sio::message::list::push	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        void push(message::ptr const& message)$/;"	f	class:sio::message::list	access:public	signature:(message::ptr const& message)
+sio::message::list::push	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        void push(std::shared_ptr<const std::string> const& binary)$/;"	f	class:sio::message::list	access:public	signature:(std::shared_ptr<const std::string> const& binary)
+sio::message::list::push	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        void push(std::shared_ptr<std::string> const& binary)$/;"	f	class:sio::message::list	access:public	signature:(std::shared_ptr<std::string> const& binary)
+sio::message::list::push	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        void push(std::string&& text)$/;"	f	class:sio::message::list	access:public	signature:(std::string&& text)
+sio::message::list::size	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        size_t size() const$/;"	f	class:sio::message::list	access:public	signature:() const
+sio::message::list::to_array_message	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        message::ptr to_array_message() const$/;"	f	class:sio::message::list	access:public	signature:() const
+sio::message::list::to_array_message	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        message::ptr to_array_message(std::string const& event_name) const$/;"	f	class:sio::message::list	access:public	signature:(std::string const& event_name) const
+sio::message::message	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        message(flag f):_flag(f){}$/;"	f	class:sio::message	access:protected	signature:(flag f)
+sio::message::ptr	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        typedef std::shared_ptr<message> ptr;$/;"	t	class:sio::message	access:public
+sio::message::std::get_binary	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        virtual std::shared_ptr<const std::string> const& get_binary() const$/;"	f	class:sio::message::std	access:public	signature:() const
+sio::message::std::get_string	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        virtual std::string const& get_string() const$/;"	f	class:sio::message::std	access:public	signature:() const
+sio::message::~message	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        virtual ~message(){};$/;"	f	class:sio::message	access:public	signature:()
+sio::null_message	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^    class null_message : public message$/;"	c	namespace:sio	inherits:message
+sio::null_message::create	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        static message::ptr create()$/;"	f	class:sio::null_message	access:public	signature:()
+sio::null_message::null_message	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        null_message()$/;"	f	class:sio::null_message	access:protected	signature:()
+sio::object_message	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^    class object_message : public message$/;"	c	namespace:sio	inherits:message
+sio::object_message::_v	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        std::map<std::string,message::ptr> _v;$/;"	m	class:sio::object_message	access:private
+sio::object_message::at	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        const message::ptr& at(const std::string & key) const$/;"	f	class:sio::object_message	access:public	signature:(const std::string & key) const
+sio::object_message::create	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        static message::ptr create()$/;"	f	class:sio::object_message	access:public	signature:()
+sio::object_message::get_map	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        const std::map<std::string,message::ptr>& get_map() const$/;"	f	class:sio::object_message	access:public	signature:() const
+sio::object_message::get_map	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        std::map<std::string,message::ptr>& get_map()$/;"	f	class:sio::object_message	access:public	signature:()
+sio::object_message::has	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        bool has(const std::string & key) const$/;"	f	class:sio::object_message	access:public	signature:(const std::string & key) const
+sio::object_message::has	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        bool has(const std::string & key)$/;"	f	class:sio::object_message	access:public	signature:(const std::string & key)
+sio::object_message::insert	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        void insert(const std::string & key,const std::string& text)$/;"	f	class:sio::object_message	access:public	signature:(const std::string & key,const std::string& text)
+sio::object_message::insert	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        void insert(const std::string & key,message::ptr const& message)$/;"	f	class:sio::object_message	access:public	signature:(const std::string & key,message::ptr const& message)
+sio::object_message::insert	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        void insert(const std::string & key,std::shared_ptr<const std::string> const& binary)$/;"	f	class:sio::object_message	access:public	signature:(const std::string & key,std::shared_ptr<const std::string> const& binary)
+sio::object_message::insert	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        void insert(const std::string & key,std::shared_ptr<std::string> const& binary)$/;"	f	class:sio::object_message	access:public	signature:(const std::string & key,std::shared_ptr<std::string> const& binary)
+sio::object_message::insert	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        void insert(const std::string & key,std::string&& text)$/;"	f	class:sio::object_message	access:public	signature:(const std::string & key,std::string&& text)
+sio::object_message::object_message	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        object_message() : message(flag_object)$/;"	f	class:sio::object_message	access:private	signature:()
+sio::object_message::operator []	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        const message::ptr& operator[] (const std::string & key) const$/;"	f	class:sio::object_message	access:public	signature:(const std::string & key) const
+sio::socket	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^    class socket$/;"	c	namespace:sio
+sio::socket::close	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        void close();$/;"	p	class:sio::socket	access:public	signature:()
+sio::socket::emit	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        void emit(std::string const& name, message::list const& msglist = nullptr, std::function<void (message::list const&)> const& ack = nullptr);$/;"	p	class:sio::socket	access:public	signature:(std::string const& name, message::list const& msglist = nullptr, std::function<void (message::list const&)> const& ack = nullptr)
+sio::socket::error_listener	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        typedef std::function<void(message::ptr const& message)> error_listener;$/;"	t	class:sio::socket	access:public
+sio::socket::event_listener	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        typedef std::function<void(event& event)> event_listener;$/;"	t	class:sio::socket	access:public
+sio::socket::event_listener_aux	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        typedef std::function<void(const std::string& name,message::ptr const& message,bool need_ack, message::list& ack_message)> event_listener_aux;$/;"	t	class:sio::socket	access:public
+sio::socket::m_impl	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        impl *m_impl;$/;"	m	class:sio::socket	access:private
+sio::socket::off	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        void off(std::string const& event_name);$/;"	p	class:sio::socket	access:public	signature:(std::string const& event_name)
+sio::socket::off_all	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        void off_all();$/;"	p	class:sio::socket	access:public	signature:()
+sio::socket::off_error	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        void off_error();$/;"	p	class:sio::socket	access:public	signature:()
+sio::socket::on	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        void on(std::string const& event_name,event_listener const& func);$/;"	p	class:sio::socket	access:public	signature:(std::string const& event_name,event_listener const& func)
+sio::socket::on	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        void on(std::string const& event_name,event_listener_aux const& func);$/;"	p	class:sio::socket	access:public	signature:(std::string const& event_name,event_listener_aux const& func)
+sio::socket::on_close	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        void on_close();$/;"	p	class:sio::socket	access:protected	signature:()
+sio::socket::on_connected	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        void on_connected();$/;"	p	class:sio::socket	access:protected	signature:()
+sio::socket::on_disconnect	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        void on_disconnect();$/;"	p	class:sio::socket	access:protected	signature:()
+sio::socket::on_error	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        void on_error(error_listener const& l);$/;"	p	class:sio::socket	access:public	signature:(error_listener const& l)
+sio::socket::on_message_packet	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        void on_message_packet(packet const& p);$/;"	p	class:sio::socket	access:protected	signature:(packet const& p)
+sio::socket::on_open	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        void on_open();$/;"	p	class:sio::socket	access:protected	signature:()
+sio::socket::operator =	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        void operator=(socket const& sock){}$/;"	f	class:sio::socket	access:private	signature:(socket const& sock)
+sio::socket::ptr	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        typedef std::shared_ptr<socket> ptr;$/;"	t	class:sio::socket	access:public
+sio::socket::socket	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        socket(client_impl*,std::string const&);$/;"	p	class:sio::socket	access:protected	signature:(client_impl*,std::string const&)
+sio::socket::socket	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        socket(socket const& sock){}$/;"	f	class:sio::socket	access:private	signature:(socket const& sock)
+sio::socket::std::get_namespace	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        std::string const& get_namespace() const;$/;"	p	class:sio::socket::std	access:public	signature:() const
+sio::socket::~socket	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        ~socket();$/;"	p	class:sio::socket	access:public	signature:()
+sio::string_message	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^    class string_message : public message$/;"	c	namespace:sio	inherits:message
+sio::string_message::_v	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        std::string _v;$/;"	m	class:sio::string_message	access:private
+sio::string_message::create	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        static message::ptr create(std::string const& v)$/;"	f	class:sio::string_message	access:public	signature:(std::string const& v)
+sio::string_message::create	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        static message::ptr create(std::string&& v)$/;"	f	class:sio::string_message	access:public	signature:(std::string&& v)
+sio::string_message::std::get_string	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        std::string const& get_string() const$/;"	f	class:sio::string_message::std	access:public	signature:() const
+sio::string_message::string_message	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        string_message(std::string const& v)$/;"	f	class:sio::string_message	access:private	signature:(std::string const& v)
+sio::string_message::string_message	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        string_message(std::string&& v)$/;"	f	class:sio::string_message	access:private	signature:(std::string&& v)
+size	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        size_t size() const$/;"	f	class:sio::array_message	access:public	signature:() const
+size	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        size_t size() const$/;"	f	class:sio::message::list	access:public	signature:() const
+socket	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        sio::socket::ptr const& socket(const std::string& nsp = "");$/;"	p	class:sio::client::sio::socket	access:public	signature:(const std::string& nsp = Ó)
+socket	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        socket(client_impl*,std::string const&);$/;"	p	class:sio::socket	access:protected	signature:(client_impl*,std::string const&)
+socket	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        socket(socket const& sock){}$/;"	f	class:sio::socket	access:private	signature:(socket const& sock)
+socket	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^    class socket$/;"	c	namespace:sio
+socket_listener	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        typedef std::function<void(std::string const& nsp)> socket_listener;$/;"	t	class:sio::client	access:public
+string_message	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        string_message(std::string const& v)$/;"	f	class:sio::string_message	access:private	signature:(std::string const& v)
+string_message	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        string_message(std::string&& v)$/;"	f	class:sio::string_message	access:private	signature:(std::string&& v)
+string_message	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^    class string_message : public message$/;"	c	namespace:sio	inherits:message
+sync_close	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        void sync_close();$/;"	p	class:sio::client	access:public	signature:()
+to_array_message	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        message::ptr to_array_message() const$/;"	f	class:sio::message::list	access:public	signature:() const
+to_array_message	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        message::ptr to_array_message(std::string const& event_name) const$/;"	f	class:sio::message::list	access:public	signature:(std::string const& event_name) const
+~client	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_client.h	/^        ~client();$/;"	p	class:sio::client	access:public	signature:()
+~message	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_message.h	/^        virtual ~message(){};$/;"	f	class:sio::message	access:public	signature:()
+~socket	/home/dev03/cpp/lib/socket.io-client-cpp/build/include/sio_socket.h	/^        ~socket();$/;"	p	class:sio::socket	access:public	signature:()
