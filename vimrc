@@ -63,6 +63,7 @@ let g:lightline = {
 let NERDTreeMapActivateNode='<right>'
 let NERDTreeShowHidden=1
 let NERDTreeIgnore=['\DS_Store', '\~$', '\.swp']
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " GitGutter's configuration
 let g:gitgutter_sign_column_always=1
@@ -108,3 +109,6 @@ augroup project
 	autocmd!
 	autocmd BufRead,BufNewFile *.h,*.c set filetype=c.doxygen
 augroup END
+
+autocmd QuickFixCmdPost [^1]* nested cwindow
+autocmd QuickFixCmdPost 1* nested lwindow
